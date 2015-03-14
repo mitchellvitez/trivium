@@ -25,13 +25,7 @@ Feature request or bug report? Open an issue or contact me.
 
 All options are passed in urls as parameters.
 
-Note: Difficulty and type selectors are not yet implemented
-
 - Limit: Number of results to return. Defaults to 1. If limit is higher than the total number of questions in the database, returns the whole database. Example: http://vitez.me/trivium/?key=API_KEY&limit=3
-
-- Difficulty: How hard questions are to answer. Possible values are `easy`, `medium`, and `hard`. Defaults to `easy+medium+hard`. Can provide subsets of questions based on their difficulty as assessed by the writer. Can be combined using the `,` separator. Example:  http://vitez.me/trivium/?key=API_KEY&difficulty=easy,medium
-
-- Type: Kinds of questions to return. Possible values are `number`, `multchoice`, and `image`. Defaults to `number+multchoice+image`. Like difficulty, can be combined using the `,` separator. Example:  http://vitez.me/trivium/?key=API_KEY&type=image
 
 ## Question Types
 
