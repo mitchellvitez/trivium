@@ -1,0 +1,27 @@
+body {
+    margin: 0;
+    font-family: "Proxima Nova","Open Sans","Gill Sans MT","Gill Sans",Corbel,Arial,sans-serif;
+    font-size: 120%;
+}
+
+h1 {
+    text-align: center;
+    font-size: 220%;
+}
+
+h2 {
+    text-align: center;
+}
+
+.header {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-color: #FF3428;
+    color: white;
+}
+
+.bodytext {
+    padding-left: 30%;
+    padding-right: 30%;
+    padding-top: 20px;
+}
