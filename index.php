@@ -44,6 +44,14 @@
 
         $data = array();
         while($row = $result->fetch_assoc()) {
+            if ($row['type'] != 'image') {
+                unset($row['image_url']);
+            }
+            if ($row['type'] == 'number') {
+                unset($row['wrong1']);
+                unset($row['wrong2']);
+                unset($row['wrong3']);
+            }
             $data[] = $row;
         }
 
