@@ -11,6 +11,16 @@ You may obtain an API key by contacting me however you choose. Without a key, vi
 
 Once you obtain a key, remember to pass it in the url (like this: http://vitez.me/trivium/?key=API_KEY )
 
+## General Notes
+
+The `creator` field is the name or handle of the writer of the question. It may often be empty.
+
+`question_id` is guaranteed to be a unique positive integer referring to that specific question.
+
+The API currently always returns empty wrong answer fields on a number-type question, empty image urls on multiple choice and number-type questions, and so on. However, in the future these may be eliminated.
+
+Feature request or bug report? Open an issue or contact me.
+
 ## Options
 
 All options are passed in urls as parameters.
@@ -30,3 +40,13 @@ Note: Difficulty and type selectors are not yet implemented
 - Number: Denoted by `number`. A question with a single numerical answer.
 
 - Image: Denoted by `image`. Just like multiple choice, but also returns a url of an image that is relevant to the question.
+
+## Errors
+
+If you do not pass a key, you will see the default welcome message
+
+If you pass an incorrect key, you will see `{"error":"invalid key"}`
+
+Passing a non-numerical limit results in `{"error":"bad limit"}`
+
+General issues with parameters will return `{"error":"query failure"}`
